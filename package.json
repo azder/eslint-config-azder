@@ -1,0 +1,16 @@
+{
+    "name": "eslint-config-azder",
+    "version": "0.0.1",
+    "description": "ESLint config for Azder",
+    "main": "index.js",
+    "repository": "https://github.com/azder/eslint-config-azder",
+    "author": "azder",
+    "license": "MIT",
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
+    "peerDependencies": {
+        "eslint": ">= 3"
+    }
+}
