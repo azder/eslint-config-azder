@@ -1,5 +1,5 @@
 {
-    "name": "eslint-config-azder",
+    "name": "@azhder/eslint-config-azder",
     "version": "0.0.1",
     "description": "ESLint config for Azder",
     "main": "index.js",
