@@ -78,7 +78,15 @@ module.exports = {
         'multiline-ternary':                [WRN, MALWAYS], // eslint-recommended: "off",
         'newline-per-chained-call':         [WRN, {ignoreChainWithDepth: 3}], // eslint-recommended: "off",
         'operator-linebreak':               [WRN, 'none', {overrides: {'?': BEFORE, ':': BEFORE}}], // eslint-recommended: "off",
-        'rest-spread-spacing':              [WRN, ALWAYS], // eslint-recommended: "off",
+        'rest-spread-spacing':              [WRN, NEVER], // eslint-recommended: "off",
+
+        'no-magic-numbers': [
+            WRN,
+            {
+                [IGNORE]:           [0, 1],
+                ignoreArrayIndexes: true,
+            },
+        ], // eslint-recommended: "off",
 
         'no-restricted-syntax': [
             ERR,
@@ -234,12 +242,10 @@ module.exports = {
         'class-methods-use-this':        WRN, // eslint-recommended: "off",
         'keyword-spacing':               WRN, // eslint-recommended: "off",
         'max-statements-per-line':       WRN, // eslint-recommended: "off",
-        'no-confusing-arrow':            WRN, // eslint-recommended: "off",
         'no-div-regex':                  WRN, // eslint-recommended: "off",
         'no-empty-function':             WRN, // eslint-recommended: "off",
         'no-implicit-globals':           WRN, // eslint-recommended: "off",
         'no-invalid-this':               WRN, // eslint-recommended: "off",
-        'no-magic-numbers':              WRN, // eslint-recommended: "off",
         'no-negated-condition':          WRN, // eslint-recommended: "off",
         'no-negated-in-lhs':             WRN, // eslint-recommended: "off",
         'no-return-await':               WRN, // eslint-recommended: "off",
@@ -346,7 +352,8 @@ module.exports = {
         'sort-keys':                       OFF, // eslint-recommended: "off",
         'template-curly-spacing':          OFF, // eslint-recommended: "off",
         'unicode-bom':                     OFF, // eslint-recommended: "off",
-        'valid-jsdoc':                     OFF, // eslint-recommended: "off"
+        'valid-jsdoc':                     OFF, // eslint-recommended: "off",
+        'no-confusing-arrow':              OFF, // eslint-recommended: "off",
 
     },
 };
