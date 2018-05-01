@@ -15,6 +15,7 @@ const ASNEEDED = 'as-needed';
 const CONSISTENT = 'consistent';
 const IGNORE = 'ignore';
 const BEFORE = 'before';
+const AFTER = 'after';
 const BESIDE = 'beside';
 
 
@@ -79,6 +80,8 @@ module.exports = {
         'newline-per-chained-call':         [WRN, {ignoreChainWithDepth: 3}], // eslint-recommended: "off",
         'operator-linebreak':               [WRN, 'none', {overrides: {'?': BEFORE, ':': BEFORE}}], // eslint-recommended: "off",
         'rest-spread-spacing':              [WRN, NEVER], // eslint-recommended: "off",
+        'generator-star-spacing':           [WRN, {[BEFORE]: true, [AFTER]: false}], // eslint-recommended: "off",
+
 
         'no-magic-numbers': [
             WRN,
@@ -234,7 +237,6 @@ module.exports = {
         'eol-last':                      WRN, // eslint-recommended: "off",
         'func-names':                    WRN, // eslint-recommended: "off",
         'no-underscore-dangle':          WRN, // eslint-recommended: "off",
-        'generator-star-spacing':        WRN, // eslint-recommended: "off",
         'no-bitwise':                    WRN, // eslint-recommended: "off",
         'arrow-spacing':                 WRN, // eslint-recommended: "off",
         'accessor-pairs':                WRN, // eslint-recommended: "off",
