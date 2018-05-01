@@ -1,6 +1,6 @@
 {
     "name": "@azhder/eslint-config-azder",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "ESLint config for Azder",
     "main": "index.js",
     "repository": "https://github.com/azder/eslint-config-azder",

@@ -80,7 +80,7 @@ module.exports = {
         'newline-per-chained-call':         [WRN, {ignoreChainWithDepth: 3}], // eslint-recommended: "off",
         'operator-linebreak':               [WRN, 'none', {overrides: {'?': BEFORE, ':': BEFORE}}], // eslint-recommended: "off",
         'rest-spread-spacing':              [WRN, NEVER], // eslint-recommended: "off",
-        'generator-star-spacing':           [WRN, {[BEFORE]: true, [AFTER]: false}], // eslint-recommended: "off",
+        'generator-star-spacing':           [WRN, {[BEFORE]: false, [AFTER]: true}], // eslint-recommended: "off",
 
 
         'no-magic-numbers': [
